@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ping-Pong Game</title>
+    <style>
+        body {
+            background-color: rgb(10, 4, 95);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: flex-start;
+            height: 100vh; 
+            margin: 0; 
+        }
+
+        #pong {
+            border: 2px solid rgb(72, 91, 238);
+            margin-top: 20px; 
+        }
+
+        .button-container {
+            display: flex; 
+            gap: 10px; 
+            margin-top: 20px; 
+        }
+
+        button {
+            background-color: #007BFF;
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+
+        button:hover {
+            background-color: #0056b3; 
+        }
+
+        #resumeButton {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+   <canvas id="pong" width="600" height="400"></canvas>
+
+   <div class="button-container">
+       <button id="restartButton">Restart Game</button>
+       <button id="pauseButton">Pause Game</button>
+       <button id="resumeButton">Resume Game</button>
+   </div>
+   
+   <script src="script.js"></script>
+</body>
+</html>
